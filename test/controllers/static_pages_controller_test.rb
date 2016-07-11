@@ -5,11 +5,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     @base_title = "InTheWrong"
   end
 
-  test "should get root" do
-    get FILL_IN
-    assert_response FILL_IN
-  end
-
   test "should get home" do
     get :home
     assert_response :success
@@ -23,7 +18,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   end
 
   test "should get about" do
-    get static_pages_about_url
+    get :about
     assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
