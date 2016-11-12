@@ -78,3 +78,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignore certificates
+/certs/*.key
+/certs/*.crt
+/certs/*.csr
